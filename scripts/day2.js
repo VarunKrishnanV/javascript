@@ -121,7 +121,6 @@ if (dose1 || dose2) {
 
 
 let number = 0;
-
 if (number) {
     console.log("It's defined");
 } else {
