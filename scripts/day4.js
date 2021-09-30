@@ -84,3 +84,5 @@ const juiceMaker = (apples, oranges) => {
 let myJuice = juiceMaker(4, 2);
 // let myJuice2 = juiceMaker(5, 2);
 console.log(myJuice);
+
+console.log(function(asdf));
