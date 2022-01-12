@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightBox - JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesom cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="image-container">
+        <div class="image">
+            <img src="./images/cat.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/city.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/city2.jpeg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/meeting.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/nature.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="./images/sky.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="lightbox hidden">
+        <button class="close">
+            <i class="far fa-times-circle"></i>
+        </button>
+        <img src="./images/city.jpg" alt="">
+    </div>
+
+    <button class="popup-opener">Open Popup</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
