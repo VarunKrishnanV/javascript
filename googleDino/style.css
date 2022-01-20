@@ -1,0 +1,91 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --line-height : .6rem;
+    --dino-color : #505050;
+    --mouth-size : 10px
+}
+
+.line{
+    height: var(--line-height);
+    background-color: var(--dino-color);
+}
+
+body{
+    background-color: orange;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dino{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(241, 241, 241);
+}
+
+
+/* 
+    head start
+*/
+
+.head{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.head__small{
+    width: 60px;
+
+}
+
+.head__big{
+    width: 75px;
+}
+
+.head__eye{
+    width: 6px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+
+/* 
+    head mouth
+*/
+.mouth{
+    position: relative;
+}
+
+.mouth_small{
+    width: 30px;
+    height: 10px;
+    position: relative;
+    background-color: var(--dino-color);    
+}
+.mouth_jaw{
+    width: 60px;
+}
+
+
+.neck{
+    width: 25px;
+    height: var(--line-height);
+    background-color: rgb(0, 0, 0);
+
+}
+

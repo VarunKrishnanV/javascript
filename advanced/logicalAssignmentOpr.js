@@ -1,4 +1,5 @@
 // logical assignment operator => &&= ||= ??=
+
 /*
 sum = sum + 10
 sum += 10
@@ -7,6 +8,7 @@ sum /= 10
 sum %= 10
 sum *= 10
 */
+
 // let friend = prompt("Enter your friend name")
 
 // OR assignment operator
@@ -28,3 +30,7 @@ console.log("------------");
 // friendCount = friendCount ?? "have friends";
 friendCount ??= "have friends";
 console.log('friendCount: ', friendCount);
+
+
+
+ 

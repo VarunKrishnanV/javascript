@@ -1,0 +1,90 @@
+<!-- 
+
+    Mapbox stylesheet : mapbox://styles/varun-krishnan-v/
+
+    access tokern : 
+    pk.eyJ1IjoidmFydW4ta3Jpc2huYW4tdiIsImEiOiJja3lkeXpwOXgwOWdjMm5xcDlyODliOWJwIn0.rzsKFbqFuGGIfBCshGOJqA
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapbox</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- mapbox directions -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+        type="text/css">
+
+    <!-- geo coder -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+        type="text/css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .mapboxgl-ctrl-geocoder {
+            min-width: 100%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+    
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoidmFydW4ta3Jpc2huYW4tdiIsImEiOiJja3lkeXpwOXgwOWdjMm5xcDlyODliOWJwIn0.rzsKFbqFuGGIfBCshGOJqA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/varun-krishnan-v/ckydzasnh3hrx15pc7qtrvt99', // style URL
+            center: [-74.5, 40], // starting position [lng, lat]
+            zoom: 9 // starting zoom
+        });
+
+        map.addControl(
+            new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+            }),
+            'top-left'
+        );
+
+    </script>
+    
+</body>
+
+</html>
